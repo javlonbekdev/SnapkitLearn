@@ -13,6 +13,7 @@
 		480FAA6E29BD8EDE00BB6144 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 480FAA6C29BD8EDE00BB6144 /* Main.storyboard */; };
 		480FAA7029BD8EDE00BB6144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 480FAA6F29BD8EDE00BB6144 /* Assets.xcassets */; };
 		480FAA7329BD8EDE00BB6144 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 480FAA7129BD8EDE00BB6144 /* LaunchScreen.storyboard */; };
+		480FAA8129BD91E200BB6144 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 480FAA8029BD91E200BB6144 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		480FAA6F29BD8EDE00BB6144 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		480FAA7229BD8EDE00BB6144 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		480FAA7429BD8EDE00BB6144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		484C301129BDA58A00D5FDE8 /* SnapkitLearn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SnapkitLearn.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480FAA8129BD91E200BB6144 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +59,7 @@
 		480FAA6529BD8EDE00BB6144 /* SnapkitLearn */ = {
 			isa = PBXGroup;
 			children = (
+				484C301129BDA58A00D5FDE8 /* SnapkitLearn.entitlements */,
 				480FAA6629BD8EDE00BB6144 /* AppDelegate.swift */,
 				480FAA6829BD8EDE00BB6144 /* SceneDelegate.swift */,
 				480FAA6A29BD8EDE00BB6144 /* ViewController.swift */,
@@ -83,6 +87,9 @@
 			dependencies = (
 			);
 			name = SnapkitLearn;
+			packageProductDependencies = (
+				480FAA8029BD91E200BB6144 /* SnapKit */,
+			);
 			productName = SnapkitLearn;
 			productReference = 480FAA6329BD8EDE00BB6144 /* SnapkitLearn.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 480FAA5A29BD8EDE00BB6144;
+			packageReferences = (
+				480FAA7F29BD91E200BB6144 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 480FAA6429BD8EDE00BB6144 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -285,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SnapkitLearn/SnapkitLearn.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H7H728C287;
@@ -302,6 +313,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = javlonbekdev.SnapkitLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,6 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SnapkitLearn/SnapkitLearn.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H7H728C287;
@@ -330,6 +345,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = javlonbekdev.SnapkitLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -358,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		480FAA7F29BD91E200BB6144 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		480FAA8029BD91E200BB6144 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 480FAA7F29BD91E200BB6144 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 480FAA5B29BD8EDE00BB6144 /* Project object */;
 }

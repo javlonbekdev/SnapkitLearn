@@ -6,14 +6,19 @@
 //
 
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
+    let box = UIView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.addSubview(box)
+        title = "Colors"
+        box.snp.makeConstraints { make in
+            make.edges.equalTo(view.safeAreaLayoutGuide)
+        }
+        box.backgroundColor = .systemGray
     }
-
-
 }
 
